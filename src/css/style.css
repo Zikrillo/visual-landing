@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Roboto;
+}
+
+
+h2 {
+    color: #0D4C93;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+h3 {
+    color: #363535;
+    font-size: 24px;
+
+    line-height: 40px;
+}
+
+h4 {
+    color: #0D4C93;
+    font-size: 20px;
+
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+li {
+    list-style: none;
+}
+
+.btn-large {
+    padding: 21px 71px;
+    background-image: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+    border: none;
+    border-radius: 35px;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    transition: .3s;
+    background-size: 100% 100%;
+}
+
+
+.btn-large:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #00C9C9 0%, #00C9C9 100%);
+}
+
+.btn-medium {
+    border-radius: 35px;
+    background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+    padding: 13px 79px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+
+    letter-spacing: 0.8px;
+}
+
+.btn-medium:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #00C9C9 0%, #00C9C9 100%);
+}
+
+.btn-small {
+    border-radius: 35px;
+    background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+    padding: 13px 31px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+
+    letter-spacing: 0.8px;
+}
+
+.btn-small:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #00C9C9 0%, #00C9C9 100%);
+}
+
+.btn-light {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    color: #0D4C93;
+    text-align: center;
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+.btn-light:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.location::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/loc.svg");
+    background-repeat: no-repeat;
+}
+
+.phone::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/phone.svg");
+    background-repeat: no-repeat;
+}
+
+.mag::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/mag.svg");
+    background-repeat: no-repeat;
+}
+
+.email::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/email.svg");
+    background-repeat: no-repeat;
+}
+
+.bg-image {
+    background: url('../assets/blur-hospital\ 1.png'), lightgray 50% / cover no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1360px;
+    position: relative;
+    left: calc(50vw - 680px);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.facebook::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/facebook-app-symbol\ 1.svg");
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.russian-flag::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/Flag_of_Russia\ 1.png");
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.uzb-flag::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/flag-uzb.png");
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.usa-flag::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../assets/flag-usa.png");
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.dropdown-light {
+    background-color: white;
+    border: none;
+    border-radius: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    color: #0D4C93;
+    text-align: center;
+    font-size: 12px;
+    font-family: Roboto;
+    align-items: center;
+    display: flex;
+    transition: 1s;
+}
+.dropdown-elements{
+    overflow: hidden;
+    height: 26px;
+    transition: 1s;
+}
+.dropdown-elements:hover{
+    height: 100px;
+}
+.dropdown-light:hover {
+    border-radius: 10px;
+}
+
+.dropdown-element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-light::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
+    margin-left: 12px;
+}
+
+.dropdown-light:hover {
+    cursor: pointer;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+.f-20{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.mb62{
+    margin-bottom: 62px;
+}
+.link-arrow{
+    text-decoration: none;
+    color: #0D4C93;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.link-arrow::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/up-arrow\ \(1\)\ 1.svg);
+    margin-left: 6px;
+}
