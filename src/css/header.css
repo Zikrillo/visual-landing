@@ -74,6 +74,10 @@
     animation: anime .5s;
     z-index: 3;
 }
+.mobile-header{
+    display: none;
+}
+
 @keyframes anime {
     0%{
         transform: translateY(-72px);
