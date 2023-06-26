@@ -6,7 +6,11 @@ const avarage = Math.round(slideArray1.length / 2);
 
 slides1.style.gridTemplateColumns = `repeat(${avarage},1fr)`;
 slides1.style.gridTemplateRows = `repeat(2,1fr)`;
-const max = - (avarage-4) * (38 + 275);
+let max = - (avarage-4) * (38 + 275);
+if(document.body.clientWidth < 1360){
+    max = - (avarage-1) * (38 + 275);
+}
+
 let currentValue = 0;
 console.log(max);
 left1.addEventListener("click", () => {
